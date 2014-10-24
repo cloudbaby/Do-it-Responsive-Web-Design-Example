@@ -1,0 +1,40 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+<title>Document</title>
+<style>
+*{margin:0; padding:0;}
+
+#wrap{
+width:90%;
+/* 960px */
+margin:0 auto;
+border:4px solid #000;
+}
+
+#wrap div{
+width:50%;
+display:inline-block;
+}
+
+img, video{
+width:100%;
+max-width:100%;
+}
+</style>
+</head>
+<body>
+	<div id="wrap">
+		<div>
+			<video controls preload="auto">
+			    <source src="source/video.mp4" type='video/mp4'></source>
+			    <source src="source/video.ogv" type='video/ogg'></source>
+			    <source src="source/video.webm" type='video/webm'></source>
+		    </video>
+		</div><div>
+		<img src="source/img_01.jpg"></div>
+	</div>
+</body>
+</html>

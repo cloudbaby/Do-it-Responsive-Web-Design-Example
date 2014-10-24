@@ -1,0 +1,326 @@
+@charset "utf-8";
+
+/* 기본 CSS */
+#wrap{
+position:relative;
+width:90%;
+margin:0 auto;
+max-width:960px;
+}
+
+#wrap section{
+box-sizing:border-box;
+}
+
+/* 인포메이션 영역 CSS */
+.info_section{
+position:absolute;
+top:30px;
+top:1.875rem;
+right:30px;
+right:1.875rem;
+z-index:30;
+}
+
+.info_list li{
+float:left;
+margin-left:15px;
+margin-left:0.625rem;
+}
+
+/* 헤더 영역 CSS */
+.header{*zoom:1;}
+
+.header:after{display:block; content:""; clear:both;}
+
+.logo{
+position:absolute;
+left:0;
+top:0;
+z-index:10;
+width:12.5%;
+/* 120px ÷ 960px */
+background:#2ecc71;
+font-size:1.188em;
+font-size:1.188rem;
+line-height:21px;
+line-height:1.313rem;
+text-align:center;
+text-transform:uppercase;
+text-shadow:0px 1px 1px #25ab5e;
+}
+
+.logo a{
+display:block;
+padding:50px 0;
+padding:3.125rem 0;
+}
+
+.nav{
+float:right;
+width:87.5%;
+/* 840px ÷ 960px */
+min-height:80px;
+min-height:5.000rem;
+background:#2ecc71;
+}
+
+.gnb{
+width:100%;
+margin-top:34px;
+margin-top:2.125rem;
+text-shadow:0px 1px 1px #25ab5e;
+}
+
+.gnb li{
+float:left;
+margin-left:5.95238095238095%;
+/* 50px ÷ 840px */
+}
+
+.gnb li a{
+font-size:0.938em;
+font-size:0.938rem;
+font-weight:bold;
+text-transform:uppercase;
+}
+
+.gnb li span, .menu_toggle_btn{display:none;}
+
+/* 슬라이더 영역 CSS */
+.slider_section{
+position:relative;
+width:50%;
+/* 480px ÷ 960px */
+height:406px;
+height:25.375rem;
+background:url(../images/p_images/slider_01.jpg) center center no-repeat;
+}
+
+.slider_section span{
+position:absolute;
+top:50%;
+z-index:10;
+width:34px;
+width:2.125rem;
+height:39px;
+height:2.438rem;
+margin-top:-19px;
+margin-top:-1.188rem;
+text-indent:-9999px;
+background:url(../images/s_images/slider_arrow.png) no-repeat;
+cursor:pointer;
+}
+
+span.prev_btn{
+left:-10px;
+left:-0.625rem;
+background-position:0 0;
+}
+
+span.next_btn{
+right:-10px;
+right:-0.625rem;
+background-position:-34px 0;
+}
+
+/* 갤러리 영역 CSS */
+.gallery_section{
+position:absolute;
+left:50%;
+top:80px;
+top:5.000rem;
+width:27.08333333333333%;
+/* 260px ÷ 960px */
+height:406px;
+height:25.375rem;
+padding:50px 5.20833333333333% 0;
+padding:3.125rem 5.20833333333333% 0;
+/* 50px ÷ 960px */
+text-align:center;
+background:#e65d5d;
+text-shadow:0px 1px 1px #c43434;
+}
+
+.gallery_section img{
+width:100%;
+max-width:100%;
+border-radius:3px;
+box-shadow:0px 1px 1px #c43434;
+}
+
+.gallery_list li:first-child + li{
+margin-top:30px;
+margin-top:1.875rem;
+}
+
+.gallery_list li figcaption{
+margin-top:20px;
+margin-top:1.250rem;
+font-size:1.188em;
+font-size:1.188rem;
+text-transform:uppercase;
+font-weight:bold;
+}
+
+/* 인기 검색어 영역 CSS */
+.rankup_section{
+position:absolute;
+top:80px;
+top:5.000rem;
+left:77.08333333333333%;
+width:22.91666666666667%;
+/* 220px ÷ 960px */
+height:406px;
+height:25.375rem;
+padding:40px 5.625%;
+padding:2.500rem 5.625%;
+/* 54px ÷ 960px */
+background:#219af7;
+text-shadow:0px 1px 1px #1974ba;
+}
+
+.title{
+margin-bottom:30px;
+margin-bottom:1.875rem;
+font-size:1.188em;
+font-size:1.188rem;
+text-transform:uppercase;
+color:#fff;
+text-align:center;
+}
+
+.rankup_list li{
+margin-top:15px;
+margin-top:0.938rem;
+text-transform:uppercase;
+font-weight:bold;
+counter-increment:rankup-counter;
+}
+
+.rankup_list li:first-child{
+margin-top:0;
+}
+
+.rankup_list li:before{
+padding-right:6px;
+padding-right:0.375rem;
+text-transform:uppercase;
+font-weight:bold;
+color:#fff;
+text-shadow:0px 1px 1px #428e9e;
+content:counter(rankup-counter) '.';
+}
+
+/* 최근 글 영역, 인기 글 영역 CSS */
+.latest_post_section, .popular_post_section{
+position:absolute;
+top:486px;
+top:30.375rem;
+width:30%;
+/* 288px ÷ 960px */
+height:262px;
+height:16.375rem;
+padding:40px 3.75%;
+padding:2.500rem 3.75%;
+/* 36px ÷ 960px */
+}
+
+.latest_post_section{
+left:0;
+background:#ffc40f;
+text-shadow:0px 1px 1px #b98e0b;
+}
+
+.popular_post_section{
+left:30%;
+background:#a660c2;
+text-shadow:0px 1px 1px #714185;
+}
+
+.latest_post_list li, .popular_post_list li{
+margin-top:15px;
+margin-top:0.938rem;
+padding-left:14px;
+padding-left:0.875rem;
+font-weight:bold;
+text-transform:uppercase;
+background:url(../images/s_images/post_circle_icon.png) left center no-repeat;
+}
+
+/* 배너 영역 CSS */
+.banner_section{
+position:absolute;
+top:486px;
+top:30.375rem;
+left:60%;
+width:22.91666666666667%;
+/* 220px ÷ 960px */
+}
+
+.banner_section div{
+height:131px;
+height:8.188rem;
+box-sizing:border-box;
+}
+
+.banner_box_01{
+padding:43px 0;
+padding:2.688rem 0;
+background:#e6567a;
+text-align:center;
+}
+
+.banner_box_02{
+padding:36px 0;
+padding:2.250rem 0;
+background:#c44968;
+text-align:center;
+}
+
+.banner_list li{
+display:inline;
+}
+
+.banner_list li:first-child + li{
+margin:0 14px;
+margin:0 0.875rem;
+}
+
+.social_section{
+position:absolute;
+top:486px;
+top:30.375rem;
+left:82.91666666666667%;
+width:17.08333333333333%;
+/* 164px ÷ 960px */
+background:#fff;
+height:262px;
+height:16.375rem;
+text-align:center;
+}
+
+.social_list li{
+margin:24px 0;
+margin:1.500rem 0;
+}
+
+.footer{
+position:absolute;
+top:748px;
+top:46.750rem;
+width:100%;
+background:#474747;
+}
+
+.footer p{
+padding:40px 0 40px 3.125%;
+padding:2.500rem 0 2.500rem 3.125%;
+/* 30px ÷ 960px */
+font-size:0.813em;
+font-size:0.813rem;
+text-transform:uppercase;
+font-weight:bold;
+color:#fff;
+text-shadow:0px 1px 1px #191919;
+}

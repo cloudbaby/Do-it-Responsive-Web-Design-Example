@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<layout version="0.2">
+    <title xml:lang="ko">서버측 반응형 웹 접근방법 테스트 레이아웃</title>
+    <description xml:lang="ko">서버측 반응형 웹 접근방법 테스트 레이아웃 입니다.</description>
+    <version>1.0</version>
+    <date>2014-06-23</date>
+    <author>
+        <name xml:lang="ko">김운아</name>
+    </author>
+</layout>
